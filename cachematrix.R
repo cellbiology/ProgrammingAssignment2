@@ -2,6 +2,11 @@
 ##We save time looking the inverse up in a cache,
 ##this eliminates the need to recompute the inverse.
 
+##To use these functions, I provided an example:
+##x<-makeCacheMatrix()
+##x$set(matrix(9:1,3,3)) -this will generate a 3x3 matrix
+##cacheSolve(x) - this will generate the inverse of the 3x3 matrix
+
 #this function creates "matrix" object that caches inverse
 makeCacheMatrix <- function(x= matrix ()) {
   m <- NULL
